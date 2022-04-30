@@ -1,0 +1,15 @@
+﻿<h2>Quiz results</h2>
+@if (ViewBag.Result != null)
+{
+    <h4>Right answers @ViewData["Right"] out @ViewData["All"]</h4>
+    <ol>
+        @foreach (var p in (ViewBag.Result))
+        {
+            <li>@p</li>
+        }
+    </ol>
+}
+else
+{
+    <h4>Not results</h4>
+}
